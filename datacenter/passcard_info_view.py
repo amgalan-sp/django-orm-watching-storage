@@ -13,7 +13,7 @@ def passcard_info_view(request, passcode):
             "entered_at": visit.entered_at,
             "duration": format_time(get_time(visit.leaved_at) - visit.entered_at),
             "is_strange": is_visit_long(visit)
-        } for visit in Visit.objects.filter(passcard=passcard),
+        } for visit in Visit.objects.filter(passcard=passcard)
     ]
     context = {
         "passcard": passcard[0],
