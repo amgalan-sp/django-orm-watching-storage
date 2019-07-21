@@ -1,4 +1,20 @@
 from django.db import models
+import datetime
+
+
+def get_time(time):
+  if time:
+    return time
+  else:
+    return datetime.datetime.now()
+
+
+def is_visit_long(visit):
+  return get_time(visit.leaved_at) - visit.entered_at > datetime.timedelta(0, 3600)
+
+
+def format_time(time):
+    return str(time).split(".")[0]
 
 
 class Passcard(models.Model):
