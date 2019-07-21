@@ -1,2 +1,4 @@
 project/.env
-__pycache__/*
+/datacenter/migrations/__pycache__
+/datacenter/__pycache__
+/project/__pycache__
