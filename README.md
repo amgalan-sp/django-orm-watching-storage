@@ -24,9 +24,15 @@ pip install -r requirements.txt
 ```
 
 Затем в командной строке (Windows) или в терминале (Linux/Unix) наберите команду:
+
 ```
 python manage.py runserver
 ```
+или, если у вас по умолчанию не стоит Python3, то 
+```
+python3 manage.py runserver
+```
+
 ### Цель проекта
 
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
