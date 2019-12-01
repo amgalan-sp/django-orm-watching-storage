@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 import datetime
 
 
@@ -6,7 +7,7 @@ def get_time(time):
   if time:
     return time
   else:
-    return datetime.datetime.now()
+    return timezone.now()
 
 
 def is_visit_long(visit):
