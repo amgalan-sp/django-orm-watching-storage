@@ -42,4 +42,4 @@ LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'Europe/Moscow'
 
-USE_TZ = False
+USE_TZ = True
