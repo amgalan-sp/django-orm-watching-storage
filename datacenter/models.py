@@ -3,13 +3,6 @@ from django.utils import timezone
 import datetime
 
 
-def get_time(time):
-  if time:
-    return time
-  else:
-    return timezone.now()
-
-
 def is_visit_long(visit):
     if visit.leaved_at:
         return visit.leaved_at - visit.entered_at > datetime.timedelta(0, 3600)
