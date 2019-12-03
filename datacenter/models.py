@@ -11,7 +11,10 @@ def get_time(time):
 
 
 def is_visit_long(visit):
-  return get_time(visit.leaved_at) - visit.entered_at > datetime.timedelta(0, 3600)
+    if visit.leaved_at:
+        return visit.leaved_at - visit.entered_at > datetime.timedelta(0, 3600)
+    else:
+        return timezone.now() - visit.entered_at > datetime.timedelta(0, 3600)
 
 
 def format_time(time):
