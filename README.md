@@ -14,6 +14,7 @@ NAME=name
 USER=username
 PASSWORD=password
 DEBUG=False
+SECRET_KEY=secret_key
 ```
 Эти данные вам необходимо внести в новый файл ".env", сохранить в основной папке.
 
